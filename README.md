@@ -15,3 +15,8 @@
             AngularFireAuthModule
     
     Refrence : https://www.youtube.com/watch?v=6TRv1xT3Y-E
+
+    All Logins : https://itnext.io/step-by-step-complete-firebase-authentication-in-angular-2-97ca73b8eb32
+
+    HTTP SERVICE HANDLE : https://www.youtube.com/watch?v=fh2GyYQcuxU
+           

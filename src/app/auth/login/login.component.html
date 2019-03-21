@@ -26,9 +26,24 @@
           <button type="button" class="login100-form-btn" *ngIf="!user" (click)="loginGoogle()">
             Login
           </button>
+
           <button type="button" class="login100-form-btn" *ngIf="user" (click)="logout()">
             Logout
           </button>
+        </div>
+        <br>
+        <div class="container-login100-form-btn">
+          <button type="button" class="login100-form-btn" (click)="loginTwitter()">
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+            Login with Twitter
+          </button>
+        </div>
+        <br>
+        <div class="container-login100-form-btn">
+            <button type="buton" class="login100-form-btn" (click)="loginFacebook()">
+                <i class="fa fa-facebook" aria-hidden="true"></i> 
+                Login with Facebook
+              </button>
         </div>
         <div class="text-center p-t-90">
           <a class="txt1" href="#">

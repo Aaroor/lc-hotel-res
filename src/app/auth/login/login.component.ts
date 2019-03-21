@@ -25,6 +25,14 @@ export class LoginComponent implements OnInit {
     
   }
 
+  loginTwitter(){
+    this.service.loginTwitter();
+  }
+
+  loginFacebook(){
+    this.service.loginFacebook();
+  }
+
   logout(){
     this.service.logout();
   }

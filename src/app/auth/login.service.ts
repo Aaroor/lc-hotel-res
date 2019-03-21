@@ -13,7 +13,8 @@ export class LoginService {
   
   login(){
     console.log('Redirecting to google login provider');
-    this.afAuth.auth.signInWithRedirect(new auth.GoogleAuthProvider);
+    //this.afAuth.auth.signInWithRedirect(new auth.GoogleAuthProvider);
+    this.afAuth.auth.signInWithPopup(new auth.GoogleAuthProvider);
   }
 
   getLoggedUser(){
@@ -22,5 +23,12 @@ export class LoginService {
 
   logout(){
     this.afAuth.auth.signOut();
+  }
+
+  loginTwitter(){
+    return this.afAuth.auth.signInWithPopup(new auth.TwitterAuthProvider);
+  }
+  loginFacebook(){
+    return this.afAuth.auth.signInWithPopup(new auth.FacebookAuthProvider);
   }
 }
